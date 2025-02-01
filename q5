@@ -1,0 +1,29 @@
+//Fazer um programa para ler a altura (em metros) e o sexo de uma pessoa e calcular o seu peso ideal
+//atrav ́es da seguinte f ́ormula:
+//para homens: 72.7 * altura - 58
+//para mulheres: 62.1 * altura - 44.7
+
+#include <stdio.h>
+
+float altura, pesoideal;
+char sexo;
+
+int main(){
+
+printf("Digite o seu sexo (M ou F):\n");
+scanf("%c", &sexo);
+printf("Digite sua altura em metros:\n");
+scanf("%f", &altura);
+
+if (sexo == 'M'){
+  pesoideal = 72.7 * altura - 58;
+} else if (sexo == 'F'){
+  pesoideal = 62.1 * altura - 44.7;
+} else {
+printf("Ou tu nasceu com uma piroca ou uma buceta seu animal, escreve qual foi pra descobrir o que tu quer seu fdp:")
+}
+
+printf("Seu peso ideal é igual a %.2f:\n:", pesoideal);
+
+return 0;
+}
