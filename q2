@@ -1,0 +1,14 @@
+// Fa ̧ca um programa capaz de ler um valor real e escrevˆe-lo com apenas uma casa decimal.
+
+#include <stdio.h>
+
+float num;
+
+int main(){
+printf("Digite um número real");
+scanf("%f", &num);
+
+printf("O número que vc digitou com uma casa decimal é igual a %.1f",num);
+
+return 0;
+}
